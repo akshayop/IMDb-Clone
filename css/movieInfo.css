@@ -1,0 +1,156 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-blend-mode: multiply;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Home Button */
+.text-container {
+    margin: 10px;
+    margin-left: 45px;
+    width: auto;
+    height: 2rem;
+}
+
+.btn:link,
+.btn:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 5px 10px;
+  display: inline-block;
+  border-radius: 100px;
+  transition: all 0.2s;
+  position: absolute;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-white {
+  background-color: gray;
+  color: white;
+}
+
+.btn::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 0.4s;
+}
+
+.btn-white::after {
+  background-color: white;
+  color:white;
+}
+
+.btn:hover::after {
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+}
+
+.btn-animated {
+          animation: moveInBottom 5s ease-out;
+          animation-fill-mode: backwards;
+}
+
+
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+/* Favorite button */
+
+#fav-list-container {
+    color: white;
+    margin-right: 10rem;
+}
+
+/* Display area */
+
+#movie-info-display {
+    display: flex;
+    align-items: center;
+    width: 75vw;
+    height: 92vh;
+}
+
+.movie-page {
+    height: inherit;
+    width: inherit;
+    display: flex;
+    align-items: center;
+}
+
+/* Poster */
+
+.movie-poster {
+    margin: 0 20px;
+    height: 80%;
+}
+
+/* Poster Image */
+
+.movie-poster img {
+    height: 100%;
+    width: auto;
+}
+
+/* movie details */
+
+.movie-details > *{
+    margin: 20px 10px;
+    color: rgb(255, 255, 255);
+    font-size: 1.6rem;
+}
+
+/* Movie Title */
+
+.movie-details h1 {
+    margin: 20px 0;
+    color: rgb(255, 255, 255);
+    font-size: 4rem;
+    font-weight: 600;
+    font-family: sans-serif;
+}
+
+
+
+/* Year of release */
+.year {
+    padding-right: 30px;
+}
+
+.d-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+/*  */
+
+#favbtn {
+    cursor: pointer;
+}
+

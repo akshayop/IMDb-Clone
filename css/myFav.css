@@ -1,0 +1,158 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Home Button */
+.text-container {
+    margin: 10px;
+    margin-left: 45px;
+    width: auto;
+    height: 2rem;
+}
+
+
+.btn:link,
+.btn:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 5px 10px;
+  display: inline-block;
+  border-radius: 100px;
+  transition: all 0.2s;
+  position: absolute;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(255, 255, 255, 0.2);
+}
+
+.btn:active {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-white {
+  background-color: grey;
+  color: white;
+}
+
+.btn::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 0.4s;
+}
+
+.btn-white::after {
+  background-color: white
+  
+}
+
+.btn:hover::after {
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+}
+
+.btn-animated {
+          animation: moveInBottom 5s ease-out;
+          animation-fill-mode: backwards;
+}
+
+/* Keyfarmes to animate the home button */
+
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+/* Clear all */
+.clearbtn {
+        padding-right: 10rem;
+}
+
+.clearbtn button {
+    border: none;
+    background: none;
+    font-size: 1.7rem;
+}
+
+.clearbtn button:hover,
+#clear-all:hover{
+    transform: scale(1.4);
+    color: red;
+}
+
+#clear-all {
+    color:white;
+}
+/* main section */
+
+#display-container .main-heading {
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 0.8rem;
+}
+
+
+/* main display */
+#display-container #list-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.movies-details {
+    margin: 30px;
+    border-radius: 0.6rem;
+}
+
+/* Movie Image */
+
+.tumbnail img{
+    height: 400px;
+    width: 300px;
+    border-radius: 2rem;
+}
+
+/* movie Details  */
+
+#details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.title {
+    max-width: 200px;
+}
+
+.title a {
+    font-size: 1.5rem;
+    color: white;
+    text-decoration: none;
+}
+
+.remove-movie {
+    transition: transform 0.5s;
+    cursor: pointer;
+}
+
+.remove-movie:hover {
+    color: red;
+    transform: scale(1.5);
+}

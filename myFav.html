@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMDB Clone</title>
+    <link rel="icon" type="image/png" href="img/IMDB_Logo.png">
+    <script src="https://kit.fontawesome.com/4757ac8be3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/myFav.css">
+</head>
+<body>
+
+    <!-- Header section -->
+    <header>
+
+        <!-- IMDb Logo -->
+        <div class="d-flex">
+            <div class="logo" id="logo">
+                <img src="img/IMDB_Logo.png" alt="IMDB Logo">
+            </div>
+
+            <div class="text-container">
+                <a href="index.html" class="btn btn-white btn-animate">Home</a>
+            </div>
+        
+        </div>
+
+        <div class="clearbtn">
+            <button id="clear-all">Clear All</button>
+        </div>
+        
+    </header>
+
+    <!--main Section -->
+    <main>
+        <div id="display-container">
+            <h1 class="main-heading">Favourite Movies</h1>
+            
+            <ul id="list-container"></ul>
+        </div>
+    </main>
+
+    <script type="text/javascript" src="js/myFav.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMDB Clone</title>
+    <link rel="icon" type="image/png" href="img/IMDB_Logo.png">
+    <script src="https://kit.fontawesome.com/4757ac8be3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <div>
+
+        <!-- Header section of the site -->
+        <header>
+
+            <!-- IMDb Logo -->
+            <div class="logo" id="logo">
+                <img src="img/IMDB_Logo.png" alt="IMDB Logo">
+            </div>
+
+            <!-- Search bar -->
+
+            <section id = "search-bar">
+                
+                <div id="search-area">
+                    <input type="text" name="search" id="search" placeholder="search IMDb" onkeyup="suggestMovies()" autocomplete="off">
+                    <button onclick="suggestMovies()">
+                        <i class="fa-solid fa-magnifying-glass fa-xl"></i>
+                    </button>
+                </div>
+
+
+                <!-- search suggestion box -->
+
+                <div class="results" id = "results">
+                    
+                </div>
+            </section>
+
+            <!-- Favourite section  -->
+
+            <div id="fav-list-container">
+                <button id = fav-list>
+                    <a href="myFav.html">Favourite</a>
+                </button>
+            </div>
+        </header>
+
+        <!-- Main Section -->
+
+        <!-- <main>
+
+            Popular Movies
+
+            <div id="main-heading">
+                Popular Movies
+            </div>
+
+            <div id="movie-container">
+                <div id = movie-element>
+                </div>
+            </div>            
+        </main> -->
+    </div>
+
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
